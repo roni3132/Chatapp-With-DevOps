@@ -1,0 +1,32 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: chatapp-frontend
+  namespace: chatapp
+spec:
+  selector:
+    matchLabels:
+      app: chatapp-frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: chatapp-frontend
+      namespace: chatapp
+    spec:
+      containers:
+      - name: chatapp-frontend
+        image: roni313233/chatapp-frontend:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: NODE_ENV
+          value: production
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi
+            

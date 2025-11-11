@@ -1,0 +1,3 @@
+kubectl port-forward service/backend -n chatapp 5001:5001 & 
+sudo -E kubectl port-forward service/frontend -n chatapp 80:80 
+
