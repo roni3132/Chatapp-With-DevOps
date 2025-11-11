@@ -2,23 +2,6 @@
 
 This project demonstrates a complete deployment of a **Chat Application** (Frontend + Backend + MongoDB) on **Kubernetes (Minikube)**.
 
----
-
-## 📁 Project Structure
-
-k8s/
-│
-├── namespace.yml
-├── mongo-pv.yml
-├── mongo-pvc.yml
-├── mongodb-deployment.yml
-├── backend-deployment.yml
-├── backend-service.yml
-├── frontend-deployment.yml
-├── frontend-service.yml
-└── README.md
-
----
 
 ## 🚀 Components
 
